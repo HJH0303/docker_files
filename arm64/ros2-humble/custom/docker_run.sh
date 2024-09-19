@@ -99,7 +99,7 @@ if [ $ARCH = "aarch64" ]; then
         docker rm $CONTAINER_NAME
     fi
 
-    docker run -it --rm --network=host --runtime=nvidia --shm-size=8g \
+    docker run -it --network=host --runtime=nvidia --shm-size=8g \
         --volume /tmp/argus_socket:/tmp/argus_socket \
 		--volume /etc/enctune.conf:/etc/enctune.conf \
 		--volume /etc/nv_tegra_release:/etc/nv_tegra_release \
