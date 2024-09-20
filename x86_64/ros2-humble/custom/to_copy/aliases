@@ -1,6 +1,7 @@
 alias re-source='source ~/.bashrc'
 alias ra='. ranger'
 alias cbt='catkin build --this'
+alias tk='tmux kill-server'
 
 # allows killing process with all its children
 killp() {

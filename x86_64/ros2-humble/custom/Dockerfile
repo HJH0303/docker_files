@@ -33,7 +33,10 @@ RUN apt-get update &&  apt-get install -q -y \
     htop \
     libgl1-mesa-glx \
     libgl1-mesa-dri \
-    vim
+    vim \
+    dos2unix \
+    x11-apps \
+    imagemagic 
 
 
 # Prepare for ROS2
@@ -95,6 +98,9 @@ RUN apt-get install -y \
     ros-${ROS2_DISTRO}-controller-manager \
     ros-${ROS2_DISTRO}-image-transport \
     ros-${ROS2_DISTRO}-cv-bridge \
+    ros-${ROS2_DISTRO}-navigation2 \
+    ros-${ROS2_DISTRO}-nav2-bringup \
+    ros-${ROS2_DISTRO}-turtlebot3* \
     libignition-transport11-dev \
     libignition-gazebo6-dev 
 
