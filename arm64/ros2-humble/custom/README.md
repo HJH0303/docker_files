@@ -15,3 +15,5 @@ bash docker_run.sh <container_name> <image_name>:<tag_name>
 3-1. Run the script file (/root/install_packages.sh)
 
 3-2. Run the script file (/root/install_ros2_px4.sh)
+
+3-3. Source the bashrc 

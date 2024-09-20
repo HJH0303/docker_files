@@ -47,4 +47,5 @@ echo '    git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"' >> 
 echo '}' >> ~/.bashrc
 echo 'PS1="\[\e[0;31m\][\u]\[\e[m\] \[\e[0;32m\]\w\[\e[m\] \$(parse_git_branch)\[\e[00m\]\n$ "' >> ~/.bashrc
 
-bash
+echo "" >> ~/.bashrc
+echo 'echo "$(stty speed 921600 < /dev/ttyUSB0)"'

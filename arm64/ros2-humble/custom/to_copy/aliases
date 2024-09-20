@@ -2,6 +2,7 @@ alias re-source='source ~/.bashrc'
 alias ra='. ranger'
 alias cbt='catkin build --this'
 alias run-agent='MicroXRCEAgent udp4 -p 8888'
+alias tk='tmux kill-server'
 
 
 # allows killing process with all its children
