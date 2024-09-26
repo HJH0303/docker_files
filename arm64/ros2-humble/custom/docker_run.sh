@@ -109,6 +109,7 @@ if [ $ARCH = "aarch64" ]; then
 		--volume /var/run/docker.sock:/var/run/docker.sock \
         --volume $ROOT/to_copy:/root/ \
         --device /dev/bus/usb \
+		--device /dev/ttyUSB0 \
         $OPTIONAL_PERMISSION_ARGS $DATA_VOLUME $DISPLAY_DEVICE $V4L2_DEVICES $I2C_DEVICES $JTOP_SOCKET $EXTRA_FLAGS \
         --name $CONTAINER_NAME \
         $IMAGE_NAME \

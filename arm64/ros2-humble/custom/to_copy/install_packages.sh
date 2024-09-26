@@ -26,7 +26,7 @@ apt-get update && apt-get install -q -y \
     libgl1-mesa-dri \
     vim \
     v4l-utils \
-    
+#imagemagic    
 
 #2#
 echo "Start to move the copied files..." 
@@ -46,6 +46,8 @@ echo 'parse_git_branch() {' >> ~/.bashrc && \
 echo '    git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"' >> ~/.bashrc && \
 echo '}' >> ~/.bashrc
 echo 'PS1="\[\e[0;31m\][\u]\[\e[m\] \[\e[0;32m\]\w\[\e[m\] \$(parse_git_branch)\[\e[00m\]\n$ "' >> ~/.bashrc
+
+echo 'export EDITOR=vim;'
 
 echo "" >> ~/.bashrc
 echo 'echo "$(stty speed 921600 < /dev/ttyUSB0)"'
